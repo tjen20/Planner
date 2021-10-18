@@ -8,7 +8,7 @@
 
 
 // Save to Local Storage
-
+let savedTasks = localStorage.getItem('tasks')
 
 
 // Refresh page and events persist
