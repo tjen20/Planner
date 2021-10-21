@@ -1,4 +1,13 @@
-// Time blocks for task coloring
+// Time and Date
+
+let today = new Date(); 
+let date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+let actualTime = moment().format('MMMM Do, YYYY - hh:mm a');
+let hour = 
+$('#currentDay')
+    .text(actualTime);
+
+// Time blocks for tasks
 
 let eightTimeBlock = document.getElementById("h8");
 let nineTimeBlock = document.getElementById("h9");
@@ -10,22 +19,22 @@ let twoTimeBlock = document.getElementById("h2");
 let threeTimeBlock = document.getElementById("h3");
 let fourTimeBlock = document.getElementById("h4");
 let fiveTimeBlock = document.getElementById("h5");
+let inputEl = document.getElementById("description");
 
-// Time and Date
-
-let today = new Date(); 
-let date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
-let actualTime = moment().format('MMMM Do, YYYY - hh:mm a');
-let hour = 
-$('#currentDay')
-    .text(actualTime);
- 
 // Color coded for past, present, and future
 
-let currentTime = $('.input');
+let currentTime = $('.description');
 
-    if (elementId < actualTime) {
-        $(backgroundEl).addClass('past')
+    if (inputEl < actualTime) {
+        $(description).addClass('past')
+    }
+
+    else if (inputEl === actualTime) {
+        $(description).addClass('present')
+    }
+
+    else if (inputEl > actualTime) {
+        $(description).addClass('future')
     }
 
 // Save to Local Storage
