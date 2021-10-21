@@ -10,4 +10,4 @@ https://tjen20.github.io/Planner/
 ![Planner](https://user-images.githubusercontent.com/89708940/137671975-25b06691-b6b1-4b46-b887-d79da507216e.png)
 
 ## Resources
-https://stackoverflow.com/questions/1531093/how-do-i-get-the-current-date-in-javascript/4929629#4929629 date/time help
+https://tecadmin.net/get-current-date-time-javascript/  date/time help
