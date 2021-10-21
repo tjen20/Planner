@@ -41,8 +41,6 @@ let currentTime = $('.description');
 
 
 
-
-
 // Refresh page and events persist
 let savedTasks = function() {
     JSON.parse(localStorage.getItem("tasks"));
